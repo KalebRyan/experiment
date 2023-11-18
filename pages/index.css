@@ -1,0 +1,88 @@
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
+.page {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+}
+
+.header {
+  background: linear-gradient(
+    to right,
+    #7b13ff 10.18%,
+    #cd2592 53.12%,
+    #ff5a13 99.92%
+  );
+  background-size: 300%;
+  animation: bg-animation 5s infinite alternate;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  margin: 0 auto 0 0;
+  padding: 0;
+  min-width: 100px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  gap: 10px;
+}
+
+.button {
+  margin: 0 0 0 auto;
+  padding: 0;
+  min-width: 100px;
+  min-height: 50px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  box-shadow: #000 0 0 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  margin: 50px auto;
+  padding: 0;
+  max-width: 900px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px 20px;
+}
+
+.grid__item {
+  height: 300px;
+  background: linear-gradient(
+    to right,
+    #7b13ff 1.18%,
+    #cd2592 53.12%,
+    #ff5a13 99.92%
+  );
+  background-size: 300%;
+  animation: bg-animation 5s infinite alternate;
+}
